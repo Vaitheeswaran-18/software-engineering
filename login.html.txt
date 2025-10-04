@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Page</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f4f4f4;
+      }
+
+      .container {
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        width: 300px;
+        text-align: center;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        text-align: left;
+      }
+
+      input,
+      select {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      input[type="submit"] {
+        background: #4caf50;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Actors Login Form</h1>
+      <form action="register.php" method="post">
+        <label>UserName</label>
+        <input type="text" name="Username" required />
+
+        <label>UserType</label>
+        <select name="Usertype" required>
+          <option value="">--Select User Type--</option>
+          <option value="Admin">Admin</option>
+          <option value="Author">Author</option>
+          <option value="Reviewer">Reviewer</option>
+         
+        </select>
+
+        <label>UserMail</label>
+        <input type="email" name="Usermail" required />
+
+        <input type="submit" value="Register" />
+      </form>
+    </div>
+  </body>
+</html>
